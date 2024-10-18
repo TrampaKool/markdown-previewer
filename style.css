@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(54, 57, 63);
+  color: white;
+}
+
+.row-class {
+}
+
+textarea {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  border: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#preview-container {
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+    scrollbar-width: none;
+  }
+  
+  .row-class {
+    flex-direction: column;
+    align-items: center;
+  }
+}
